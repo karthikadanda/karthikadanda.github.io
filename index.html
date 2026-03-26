@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XPRINT - Premium DTF T-Shirt Printing</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+/* GENERAL */
+body {
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    line-height:1.6;
+    background:#f9f9f9;
+    color:#333;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #111;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .logo img {
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+}
+
+header .logo h2 {
+    font-size: 24px;
+    color: #ff3b3b;
+    margin: 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ff9a3b;
+}
+
+/* HERO */
+.hero {
+    background:linear-gradient(135deg, #ff3b3b, #ff9a3b);
+    color:white;
+    text-align:center;
+    padding:120px 20px 100px 20px;
+    border-bottom-left-radius:60px;
+    border-bottom-right-radius:60px;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero h1 {
+    font-size:50px;
+    margin-bottom:20px;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn {
+    background:#25d366;
+    color:white;
+    padding:15px 40px;
+    text-decoration:none;
+    font-weight:700;
+    border-radius:50px;
+    transition:0.3s;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background:#128c7e;
+    transform: translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* SECTIONS */
+section {
+    padding:100px 20px;
+    text-align:center;
+}
+
+h2 {
+    font-size:38px;
+    margin-bottom:50px;
+    background:linear-gradient(90deg,#ff3b3b,#ff9a3b);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* SERVICES */
+.services {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.service-card {
+    background:#fff;
+    padding:35px;
+    width:260px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s, background 0.3s, color 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    background:linear-gradient(135deg,#ff3b3b,#ff9a3b,#ffd23b);
+    color:white;
+}
+
+.service-card h3 {
+    margin-bottom:15px;
+    color:#ff3b3b;
+    transition: color 0.3s;
+}
+
+.service-card:hover h3 {
+    color:white;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.portfolio img {
+    width:260px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.portfolio img:hover {
+    transform: scale(1.08);
+    box-shadow:0 12px 30px rgba(0,0,0,0.3);
+}
+
+/* CONTACT */
+.contact p {
+    font-size:18px;
+    margin:10px 0;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#25D366;
+    color:white;
+    padding:18px;
+    border-radius:50%;
+    font-size:26px;
+    text-decoration:none;
+    box-shadow:0 6px 20px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.whatsapp:hover {
+    background:#128c7e;
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    font-size:16px;
+    letter-spacing:0.5px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+
+    header nav a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .services, .portfolio {
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .service-card, .portfolio img {
+        width:90%;
+    }
+
+    .hero h1 {
+        font-size:38px;
+    }
+
+    .hero p {
+        font-size:18px;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="XPRINT Logo">
+        <h2>XPRINT</h2>
+    </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Bring Your Designs to Life</h1>
+    <p>Premium DTF T-Shirt Printing for Businesses, Brands & Personal Use</p>
+    <a href="https://wa.me/91XXXXXXXXXX" class="btn">Order on WhatsApp</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <section id="about">
+    <h2>About Us</h2>
+    <p>XPRINT is a leading DTF (Direct-to-Film) printing service delivering high-quality custom t-shirts and apparel. 
+    We combine the latest printing technology with vibrant, long-lasting inks to bring your designs to life. 
+    Whether you are a small business, a brand, or an individual, we offer reliable solutions for bulk orders and personalized creations.</p>
+    <p>Our mission is to make custom clothing accessible, affordable, and visually stunning. With XPRINT, every t-shirt is a masterpiece that stands out.</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3>Custom T-Shirts</h3>
+            <p>Design and print personalized t-shirts for events, gifts, or personal expression with vivid colors and lasting quality.</p>
+        </div>
+        <div class="service-card">
+            <h3>Bulk Orders</h3>
+            <p>Affordable solutions for team uniforms, corporate merchandise, or event giveaways with fast turnaround times.</p>
+        </div>
+        <div class="service-card">
+            <h3>DTF Transfers</h3>
+            <p>High-quality DTF transfers compatible with all fabrics, providing flexibility for clothing production or resale.</p>
+        </div>
+        <div class="service-card">
+            <h3>Brand Merchandise</h3>
+            <p>Launch your clothing line or promotional merchandise with professional-grade prints that elevate your brand.</p>
+        </div>
+    </div>
+</section>
+<!-- PORTFOLIO / PRODUCTS -->
+<section id="portfolio">
+    <h2>Our Work</h2>
+    <div class="portfolio">
+        <img src="product1.jpg" alt="T-Shirt Design 1">
+        <img src="product2.jpg" alt="T-Shirt Design 2">
+        <img src="product3.jpg" alt="T-Shirt Design 3">
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 +91 7569864565</p>
+    <p>📧 xprinthydsales@gmail.com</p>
+    <p>📍2nd floor, Rehmath complex, Ameerpet, Hyd</p>
+</section>
+
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 XPRINT. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
